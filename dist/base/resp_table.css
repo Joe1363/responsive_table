@@ -1,0 +1,18 @@
+/* Resp Table (v1.0.0) - Copyright 2018 Joseph Cabral - Licensed under MIT
+   Docs:
+*/
+.resp_table { display: table;  width: 100%; }
+.rt_tr { display: table-row; }
+.rt_td, .rt_th { display: table-cell;  padding-right: 4px; }
+.rt_td {  vertical-align: top;  }
+.rt_m_th { display: none;  width: 110px;  text-align: right; }
+@media screen and (max-width: 860px) {
+  .resp_table { display: block;  width: auto; }
+  .rt_tr { display: block; }
+  .rt_th { display: none; }
+  .rt_m_th { display: table-cell; }
+  .rt_tr:not(:first-child):not(:last-child) { margin-bottom: 5px; }
+  .rt_td { display: table;  width: 100%; }
+  .rt_td span { display: table-cell; }
+  .rt_td span::after { content: ' ';  white-space: pre; }
+}

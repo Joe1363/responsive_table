@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resp Table Theme 1 Example</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Resp Table Base Example</h1>
+      <p>Theme 1 contains simple styling that can be easily adjusted or overidden.</p>
+
+      <div class="resp_table">
+        <div class="rt_tr">
+          <div class="rt_th">Header 1</div>
+          <div class="rt_th">Header 2</div>
+          <div class="rt_th">Header 3</div>
+          <div class="rt_th">Header 4</div>
+        </div>
+
+        <div class="rt_tr">
+          <div class="rt_td">
+              <div class="rt_m_th">Header 1</div>
+              <span>Content Block 1</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 2</div>
+              <span>Content Block 2</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 3</div>
+              <span>Content Block 3</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 4</div>
+              <span>Content Block 4</span>
+          </div>
+        </div>
+
+        <div class="rt_tr">
+          <div class="rt_td">
+              <div class="rt_m_th">Header 1</div>
+              <span>Content Block 5</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 2</div>
+              <span>Content Block 6</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 3</div>
+              <span>Content Block 7</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 4</div>
+              <span>Content Block 8</span>
+          </div>
+        </div>
+
+        <div class="rt_tr">
+          <div class="rt_td">
+              <div class="rt_m_th">Header 1</div>
+              <span>Content Block 9</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 2</div>
+              <span>Content Block 10</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 3</div>
+              <span>Content Block 11</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 4</div>
+              <span>Content Block 12</span>
+          </div>
+        </div>
+
+        <div class="rt_tr">
+          <div class="rt_td">
+              <div class="rt_m_th">Header 1</div>
+              <span>Content Block 13</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 2</div>
+              <span>Content Block 14</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 3</div>
+              <span>Content Block 16</span>
+          </div>
+          <div class="rt_td">
+              <div class="rt_m_th">Header 4</div>
+              <span>Content Block 17</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #container { width: 800px;  margin: 0 auto; }
+  @media (max-width: 840px) {
+    #container { width: auto;  margin: 0 10px; }
+  }
+
+  /* Resp Table (v1.0.0) - Copyright 2018 Joseph Cabral - Licensed under MIT
+     Docs:
+  */
+  .resp_table { display: table;  width: 100%; }
+  .rt_tr { display: table-row; }
+  .rt_td, .rt_th { display: table-cell;  padding-right: 4px; }
+  .rt_td {  vertical-align: top;  }
+  .rt_m_th { display: none;  width: 110px;  text-align: right; }
+  @media (max-width: 860px) {
+    .resp_table { display: block;  width: auto; }
+    .rt_tr { display: block; }
+    .rt_th { display: none; }
+    .rt_m_th { display: table-cell; }
+    .rt_tr:not(:first-child):not(:last-child) { margin-bottom: 5px; }
+    .rt_td { display: table;  width: 100%; }
+    .rt_td span { display: table-cell; }
+    .rt_td span::after { content: ' ';  white-space: pre; }
+  }
+  /* Theme 1 */
+  .resp_table { border: 1px solid rgba(0, 0, 0, 0.125); }
+  .rt_th, .rt_m_th { background: #4e5c7b;  color: #ffffff; }
+  .rt_th, .rt_td { padding: 10px 15px; }
+  .rt_th:not(:last-child), .rt_td:not(:last-child) { border-right: 1px solid rgba(0, 0, 0, 0.125); }
+  .rt_td { border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  .resp_table .t_actions a { padding-right: 8px; }
+  @media (max-width: 860px) {
+    .resp_table { border: none; }
+    .rt_th, .rt_td { padding: 0;  text-align: unset; }
+    .rt_tr:not(:first-child) { border: 1px solid rgba(0, 0, 0, 0.125); }
+    .rt_tr:nth-of-type(2) .rt_td:nth-of-type(1) { border-top: none; }
+    .rt_tr .rt_td:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+    .rt_th:not(:last-child), .rt_td:not(:last-child) { border-right: 0; }
+    .rt_m_th, .rt_td span { padding: 5px 10px; }
+    .resp_table .t_icon { width: unset; }
+  }
+</style>
