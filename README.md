@@ -1,8 +1,8 @@
-# Resp Tables
+# Responsive Tables
 
-Resp Table is a lightweight, pure CSS solution for displaying responsive tables using display table.
+Responsive Table is a lightweight, pure CSS solution for displaying responsive tables using display table.
 
-Resp Table comes in a base version no with additional styling and one with simple styling provided.
+Responsive Table comes in a base version no with additional styling and one with simple styling provided.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Begin with the "resp_table" class.
       ...
     </div>
 
-From here add div "rt_tr" with the first containing divs with "rt_th".
+From here add div class "rt_tr" to function as your table tr and divs with class "rt_th" as your table th.
 
     <div class="resp_table">
         <div class="rt_tr">
@@ -25,21 +25,21 @@ From here add div "rt_tr" with the first containing divs with "rt_th".
         ...
     </div>
 
-For the content, add "rt_tr" containing a div "rt_m_th" that will function as your mobile header and a span "rt_td" to contain the content.
+For the content, add "rt_tr" containing a divs "rt_m_th" that will function as your mobile header and a div "rt_tdc" to contain the content.
 
       ...
       <div class="rt_tr">
           <div class="rt_td">
               <div class="rt_m_th">Header 1</div>
-              <span>Content 1</span>
+              <div class="rt_tdc">Content 1</div>
           </div>
           <div class="rt_td">
               <div class="rt_m_th">Header 2</div>
-              <span>Content 2</span>
+              <div class="rt_tdc">Content 2</div>
           </div>
           <div class="rt_td">
               <div class="rt_m_th">Header 3</div>
-              <span>Content 3</span>
+              <div class="rt_tdc">Content 3</div>
           </div>
       </div>
       ...
@@ -60,38 +60,38 @@ Full example:
       <div class="rt_tr">
         <div class="rt_td">
             <div class="rt_m_th">Header 1</div>
-            <span>Content Block 1</span>
+            <div class="rt_tdc">Content Block 1</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 2</div>
-            <span>Content Block 2</span>
+            <div class="rt_tdc">Content Block 2</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 3</div>
-            <span>Content Block 3</span>
+            <div class="rt_tdc">Content Block 3</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 4</div>
-            <span>Content Block 4</span>
+            <div class="rt_tdc">Content Block 4</div>
         </div>
       </div>
 
       <div class="rt_tr">
         <div class="rt_td">
             <div class="rt_m_th">Header 1</div>
-            <span>Content Block 5</span>
+            <div class="rt_tdc">Content Block 5</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 2</div>
-            <span>Content Block 6</span>
+            <div class="rt_tdc">Content Block 6</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 3</div>
-            <span>Content Block 7</span>
+            <div class="rt_tdc">Content Block 7</div>
         </div>
         <div class="rt_td">
             <div class="rt_m_th">Header 4</div>
-            <span>Content Block 8</span>
+            <div class="rt_tdc">Content Block 8</div>
         </div>
       </div>
     </div>
