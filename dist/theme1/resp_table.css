@@ -13,8 +13,8 @@
   .rt_m_th { display: table-cell; }
   .rt_tr:not(:first-child):not(:last-child) { margin-bottom: 5px; }
   .rt_td { display: table;  width: 100%; }
-  .rt_td span { display: table-cell; }
-  .rt_td span::after { content: ' ';  white-space: pre; }
+  .rt_td .rt_tdc { display: table-cell; }
+  .rt_td .rt_tdc::after { content: ' ';  white-space: pre; }
 }
 /* Theme 1 */
 .resp_table { border: 1px solid rgba(0, 0, 0, 0.125); }
@@ -22,7 +22,6 @@
 .rt_th, .rt_td { padding: 10px 15px; }
 .rt_th:not(:last-child), .rt_td:not(:last-child) { border-right: 1px solid rgba(0, 0, 0, 0.125); }
 .rt_td { border-top: 1px solid rgba(0, 0, 0, 0.125); }
-.resp_table .t_actions a { padding-right: 8px; }
 @media (max-width: 860px){
   .resp_table { border: none; }
   .rt_th, .rt_td { padding: 0;  text-align: unset; }
@@ -30,6 +29,5 @@
   .rt_tr:nth-of-type(2) .rt_td:nth-of-type(1) { border-top: none; }
   .rt_tr .rt_td:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .rt_th:not(:last-child), .rt_td:not(:last-child) { border-right: 0; }
-  .rt_m_th, .rt_td span { padding: 5px 10px; }
-  .resp_table .t_icon { width: unset; }
+  .rt_m_th, .rt_td .rt_tdc { padding: 5px 10px; }
 }

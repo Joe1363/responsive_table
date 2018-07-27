@@ -13,6 +13,6 @@
   .rt_m_th { display: table-cell; }
   .rt_tr:not(:first-child):not(:last-child) { margin-bottom: 5px; }
   .rt_td { display: table;  width: 100%; }
-  .rt_td span { display: table-cell; }
-  .rt_td span::after { content: ' ';  white-space: pre; }
+  .rt_td .rt_tdc { display: table-cell; }
+  .rt_td .rt_tdc::after { content: ' ';  white-space: pre; }
 }
